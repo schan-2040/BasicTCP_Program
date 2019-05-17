@@ -1,7 +1,6 @@
 '''
 File: client.py
 Name: Shaurya Chandhoke
-Class: CS 356 102
 '''
 import sys
 import re #used to split url via regex
