@@ -1,0 +1,35 @@
+Name: Shaurya Chandhoke
+UCID: sc855
+Programming language and version: Python 3.6.7
+Testing environment:
+    OS: Ubuntu 18.04.02 LTS
+    Command lines:
+        Terminal 1: 'python3 client.py <url>'
+              ex.   'python3 client.py localhost:12000/filename.html'
+
+        Terminal 2: 'python3 server.py <IP> <Port>'
+              ex.   'python3 server.py 127.0.0.1 12000'
+
+
+Comments:
+
+This is a basic TCP-based communication program that simulates caching HTML
+files. It requires that the client and server python scripts be in the same
+directory, along with any HTML files you would like to pass
+
+Feel free to pass as many HTML files through the client, given they are located
+in the same directory
+
+This will also work on a Chrome Browser, simply enter the url with the server running,
+no need for the client in this case
+
+Depending on the scenario, the program will:
+- Create a cache file if it is not detected in the directory and cache the
+  requested HTML file within it
+- Update the cached file should it require to be updated when fetching the HTML
+  file from the server
+
+The cache file, called 'cache.txt' is a csv file containing the following
+information about each HTML file:
+
+filename, Last-Modification-Time (in %a, %d %b %Y %H:%M:%S %Z" format)
