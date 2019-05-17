@@ -1,8 +1,6 @@
 '''
 File: server.py
 Name: Shaurya Chandhoke
-UCID: sc855
-Class: CS 356 102
 '''
 import sys
 import re #used to split url via regex
